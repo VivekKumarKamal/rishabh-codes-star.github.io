@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year Review 2024</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap" rel="stylesheet">
+    
+    <script src="/script.js"></script>
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/index.html">
+                    <svg width="32" height="28" viewBox="0 0 37 28" fill="none"">
+                        <path d="M5.48 21.84L12.16 17.84L16.24 15.76V15.56L13.36 13.96L11.6 12.92C11.0933 12.6267 10.68 12.4267 10.36 12.32C10.0667 12.1867 9.73333 12.12 9.36 12.12C8.98667 12.12 8.62667 12.2 8.28 12.36C7.96 12.52 7.57333 12.7467 7.12 13.04L4.44 14.76L1.88 11.04L4.88 9.12C5.73333 8.58667 6.46667 8.21333 7.08 8C7.69333 7.76 8.30667 7.64 8.92 7.64C9.61333 7.64 10.28 7.74667 10.92 7.96C11.5867 8.14667 12.3467 8.50667 13.2 9.04L15.56 10.48L16.64 11.28L16.76 11.24L16.52 6.84V4.16H0V0H36.96V4.16H21.64V7L21.56 11.8L21.72 11.84L23.6 10.36L29.44 6.44L31.84 9.76L31.44 10.08C31.2267 10.24 31.0267 10.5067 30.84 10.88C30.6533 11.2533 30.56 11.6667 30.56 12.12C30.56 13.0267 30.8267 13.7333 31.36 14.24C31.92 14.7467 32.6267 15 33.48 15H33.84V19.96H32.36C31.2667 19.96 30.4667 20.1733 29.96 20.6C29.4533 21 29.2 21.5333 29.2 22.2C29.2 22.9467 29.4267 23.52 29.88 23.92C30.3333 24.32 31.0667 24.52 32.08 24.52H33.92V27.88H31.92C29.6 27.88 27.8133 27.4 26.56 26.44C25.3333 25.4533 24.72 24.08 24.72 22.32C24.72 21.0933 25.0933 20.04 25.84 19.16C26.6133 18.2533 27.6667 17.64 29 17.32V17.12C28.28 16.7733 27.76 16.3067 27.44 15.72C27.12 15.1333 26.96 14.4933 26.96 13.8V13.56L26.84 13.44L23.88 15.52L21.56 17.12L21.68 23.28L21.64 27.92H16.52V24.12L16.68 20.24L16.52 20.16L14.24 21.88L8.12 25.8L5.48 21.84Z" fill="#0A0A0A"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hamburger-icon" id="hamburger" onclick="toggleMenu()">
+                <svg id="hamburger-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"">
+                    <path d="M4 7h22M4 15h22M4 23h22" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="menu-items hide-in-desk" id="menu-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="writings.html">Writings</a></li>
+                    <li><a href="notes.html">Notes</a></li>  
+                    <li><a href="24fps.html">24 fps</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="clicks.html">Clicks </a></li>
+                    <li><a href="works.html">Work</a></li>                    
+                </ul>
+            </div>
+            <div class="menu-cat-btn">
+                <a href="/library.html" class="btn-hide category-button">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.00001 7.16663L2.66667 10.5L6.00001 13.8333" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3333 3.16663V7.83329C13.3333 8.54054 13.0524 9.21881 12.5523 9.71891C12.0522 10.219 11.3739 10.5 10.6667 10.5H2.66667" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <span id="all">All Articles</span>
+                </a>
+                <div class="sidebar">
+                    <!-- <ul>
+                        <li><a href="#section1" class="nav-link active">Hello World</a></li>
+                        <li><a href="#section2" class="nav-link">Notes</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>    
+
+        <div class="space-left"></div>
+
+        <div class="content">
+            <div class="doodle">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.745 50.7913C15.9577 47.8866 18.7589 43.3322 23.7921 41.2419C25.4636 40.5478 27.3813 40.1253 29.5687 40.1253C31.6479 40.1253 33.535 40.5263 35.2222 41.1843C41.2271 43.5262 44.7009 49.1237 45.2921 51.4882" stroke="black" stroke-opacity="0.9" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.503384" d="M30.7138 11.4988C31.6472 11.0878 31.1847 11.2991 32.7392 10.5232C33.5949 10.096 34.6641 9.59105 35.6507 9.87268C36.9936 10.256 39.035 12.8208 37.423 14.0357C33.8284 16.7447 27.9841 15.3385 25.5237 19.89C25.0987 20.6762 24.9088 21.6824 25.2705 22.5569C26.2987 25.0432 32.3343 24.6541 34.3849 24.4433C34.7169 24.4092 36.4448 24.4125 36.4102 23.5977C36.2707 20.2972 29.2622 15.7643 27.0428 13.5804C26.8627 13.4033 24.532 11.2228 25.3971 10.3931C25.7809 10.0249 27.5934 10.683 27.6757 10.7183C30.5192 11.9359 38.166 16.4383 36.2836 20.4755C34.1826 24.9818 23.3073 23.0668 23.9413 29.3219C24.2118 31.9907 28.4494 32.8334 30.334 33.3548C33.748 34.2995 40.7558 36.6227 41.7903 31.1433C42.5057 27.354 40.7581 20.3928 36.0938 20.2153C31.5539 20.0424 27.5484 25.4049 21.8526 23.9229C16.4831 22.5259 15.9584 14.3249 18.6879 10.7183C21.9267 6.43875 26.4231 9.46644 30.2074 11.2387C32.8259 12.465 36.1967 13.8959 36.0305 17.4833C35.8397 21.6021 33.7237 25.0089 31.41 28.2161C30.1926 29.9036 27.9115 32.1493 27.739 34.3956C27.5303 37.1119 31.4458 36.9748 33.0556 36.6072C34.8796 36.1907 36.899 34.9535 38.2458 33.6801C41.0045 31.0718 43.5561 26.5688 42.9296 22.5569C42.1674 17.6762 34.8029 13.0454 30.5239 13.3202C28.894 13.4249 28.2284 14.227 27.4858 15.5969C25.7458 18.8064 25.1208 22.4979 25.0806 26.1346C25.0583 28.1454 25.8851 30.2885 25.7135 32.184C25.5763 33.6994 24.5036 34.0841 23.2451 33.4198C18.5065 30.9192 20.594 20.7947 21.4095 16.7026C21.6132 15.6809 21.5178 14.0897 22.4855 13.7755C23.5215 13.4393 25.3837 16.9341 25.3971 16.9628C27.1822 20.7893 26.8566 31.7244 20.3968 30.3626C15.4115 29.3116 19.7266 13.3071 25.5869 14.2959C30.8784 15.1887 34.4643 20.6143 34.7647 25.8094C34.8301 26.9412 34.6284 29.6017 33.7519 30.6878C32.5941 32.1228 28.1991 32.3332 27.0428 30.8179C26.4661 30.0625 26.0019 29.1617 25.8401 28.2161C25.1816 24.3669 28.7326 13.7046 32.4227 11.9542C37.3812 9.60232 40.2682 16.5193 39.9548 20.3454C39.2701 28.6999 27.6875 31.398 22.2957 25.9394C19.8755 23.4894 19.5659 16.8269 20.7132 13.7105C21.3263 12.0454 22.5037 11.2378 24.0678 10.6532C25.1199 10.2601 28.02 9.65783 29.258 9.93778C34.4571 11.1132 40.5339 16.8273 42.5498 21.9065C46.458 31.7532 27.3333 39.1088 22.5489 31.1433C21.4182 29.2609 21.4661 26.155 21.4095 24.1181C21.3846 23.2209 21.1324 20.4432 21.9159 19.3696C23.4861 17.218 28.6786 22.0362 29.7644 22.687C30.6529 23.2197 31.5724 23.7223 32.5493 24.053C37.3043 25.6628 37.7597 23.2769 41.4105 22.3618C42.0244 22.208 43.5639 22.0836 44.1955 22.1016C44.5692 22.1122 45.6261 22.3054 45.2714 22.4268C41.6595 23.6642 35.912 17.8472 32.7392 16.8327C31.782 16.5267 30.7664 16.4122 29.7644 16.3774C27.8631 16.3116 26.3455 16.7324 24.6375 17.5483C21.7045 18.9493 20.9449 21.5214 17.6752 20.3454" stroke="black" stroke-opacity="0.9" stroke-width="0.81" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                 
+            </div>
+            
+
+            <h1 class="name">Year Review 2024</h1>
+            <span class="date">25/12/2024</span>
+
+            <b>Work</b>
+            <p>
+                This year, I think I did well. On Sneak Peek, we wrapped up two seasons. Season 2 has been the biggest and heaviest so far. I did a teaching assistantship at Genwise in May. Then, in July, I completed a field immersion for my minor course in Telangana.
+            </p>
+            <br>
+
+            <b>College</b>
+            <p>
+                Semester 4 and 5 are done and dusted. Grades are decent. I dropped out of honors. The decision to leave was tough, but I was at a junction where I had to do something about it. It felt like dropping out would be better. I feel bad about it. My supervisor and I had invested a lot of time in it.
+            </p>
+            <br>
+
+            <b>Personal</b>
+            <p>
+                In my life, I had never imagined I would be able to run a 10k. But guess what? I did! In this APU winter, I participated in a 10k and completed it in 1 hour and some minutes. I am proud of it.
+            </p>
+            <br>
+            
+            <p>
+                Working at Genwise gave me new friends. Spending time with them during that period was a cheerful experience. I attended the 10k Designers' annual grad party and participated in the design hackathon. Our team didn’t win, and we didn’t make the top 10, but building with my teammates all night was fun.
+            </p>
+            <br>
+
+            <p>
+                I upgraded to a MacBook, which is sort of a dream come true. I still can’t believe I use a MacBook now. It’s unbelievable. I also got Sony headphones. Using earphones for long hours used to hurt, especially when I had to edit for long stretches. I think the headphones will make life easier.
+            </p>
+            <br>
+
+            <p>
+                In the summer, I made a trip back home. I met my grandparents and others. It was very hot back in Lucknow. I wonder how I will survive there now when I have to go back after this semester in May. It’s going to be tough. I’m praying.
+            </p>
+            <br>
+
+            <p>
+                Vivek and I released my website on my birthday. It’s the best birthday gift I’ve received so far. The website is still not functional. In December, I made some more changes to its design. The other major drawback was the lack of content for the website. Because of this, the pages were a little hazy. Now I have a good amount of content. So, it should look good when we give it an update this January.
+            </p>
+            <br>
+
+            <b style="font-size: 18px;">Some of the Major Learnings of the Year</b>
+            <br>
+            <b>Stupid or Smart</b>
+
+            <p>
+                The people close to me and whom I admire a lot are not special. I’m not tagging them as they are or aren’t—it feels like luck. You can’t count it in any form of success. So, it’s better to discount it and see the reality.
+            </p>
+            <br>
+
+            <p>I realized they are normal individuals who are just hard-working, with set priorities and goals, and a daily schedule (decision-making).</p>
+            <br>
+
+            <b>Document Everything</b>
+            <p>I feel if I had known this from the start, it would have been so beneficial. No worries—I’ll try to work on it now and double down on documentation at work and in life.</p>
+            <br>
+
+            <b>Things Change</b>
+            <p>I observed and felt closely that people change. I knew that before, but the interesting part was that I didn’t take it into account in my judgments.</p>
+            <br>
+
+            <p>Having this thought—that “humans are transient”—is humbling. You become very relaxed once you start thinking about people in this way.</p>
+            <br>
+
+            <b>It Will Be Boring</b>
+            <p>
+                During the Telangana immersion, I learned that most of the work, especially at the start of my career, will be boring. Our aim should be to reduce it as much as possible while moving forward—and to move fast. There will always be boring and repetitive work; there’s no running from it. Make peace with it.
+            </p>
+            <br>
+
+            <b>Omnipresence of Uncertainty</b>
+            <p>
+                Life is uncertain. It’s much better to be okay with uncertainty rather than fighting it. It’s more peaceful when you stop battling things you can’t beat. Uncertainty is one of those things. My professor said to me, “Dealing with uncertainties is vital, Rishabh. The sooner you do that, the better your well-being will be.”
+            </p>
+            <br>
+
+            <p>
+                Overall it was a good year. Next year I would like to be little more aggressive on the work and learning front. I think I can do it. Let’s see. I hope you do to, whatever you are aiming for.
+            </p>
+            <br>
+
+            <p>
+                Bye, See you in 2025.
+            </p>
+            <br>
+
+            <br>
+            <br>
+
+            <i>Proofreading done by AI</i>
+            <br>
+
+            <!-- <p>
+                Notes:
+                <ol>
+                    <li>I found Farnam Street, Sam's blog and Paul's essay sometime in 2022-23. Since then I have been a huge admirer of their work — particularly the ideas from Farnam Street.</li>
+                </ol>
+            </p> -->
+
+        </div>
+    </div>
+</body>
+
+<style>
+    blockquote{
+        border-left: 5px solid var(--primary-color);
+        border-radius: 3px;
+        margin: 0px;
+        padding: 2px 20px;
+    }
+</style>
+
+</html>

@@ -22,9 +22,33 @@ body {
     scroll-behavior: smooth;
     background-color: var(--background-color);
     margin-bottom: 100px;
-  }
+}
 
-  
+p{
+    line-height: 24px;
+    margin: 5px 0 0;
+}
+
+h1{
+    margin: 0 0 15px;
+    font-size: 35px;
+    line-height: 100%;
+}
+
+h2{
+    font-weight: 500;
+    font-size: var(--font-size-medium);
+    margin-top: 25px;
+}
+
+
+.list-content{
+    width: 100%;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+
 .main{
     font-family: Inter, display;
     display: flex;
@@ -39,12 +63,16 @@ body {
     z-index: 3;
     cursor: pointer;
 }
+.doodle{
+    margin-left: -11px;
+}
+
 .hindi-name{
     display: none;
 }
-.name{
-    font-weight: normal;
-    font-size: var(--font-size-medium);
+
+.hindi-title{
+    line-height: 120%;
 }
 
 .content{
@@ -53,23 +81,18 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 .date{
     color: var(--secondary-color);
     font-size: var(--font-size-medium);
     position: relative;
     top: -13px;
 }
-p{
-    line-height: 24px;
-    margin: 10px 0;
-}
 
-h2{
-    font-weight: 500;
-    font-size: var(--font-size-medium);
-    margin-top: 25px;
+.halka-sa-andar{
+    margin-left: 6px;
 }
-
 
 .hamburger-icon{
     cursor: pointer;
@@ -262,6 +285,7 @@ h2{
     display: flex;
     margin-bottom: 15px;
     margin-left: 10px;
+    padding: 20px;
 }
 
 a{
@@ -341,16 +365,34 @@ details[open] summary::before {
     width: 100px;
 }
 
+.hindi-poem{
+    font-size: var(--font-size-medium);
+    margin-top: 10px;
+}
+.english-poem{
+    font-size: var(--font-size-small);
+}
 
 
 
 @media (max-width: 600px) {
+    p{
+        line-height: 24px;
+        margin: 1px 0 0;
+    }
     .image-grid {
         grid-template-columns: 1fr;
     }
     .content{
-        margin-left: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+    .list-content{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
     .article-item {
         display: flex;
         flex-direction: column; 
@@ -359,6 +401,7 @@ details[open] summary::before {
 
     .article-name {
         margin-bottom: 5px; /* Add some space between the name and date */
+        margin-right: 15px;
     }
 }
 
@@ -369,7 +412,12 @@ details[open] summary::before {
     .article-date{
         padding-left: auto;
         position: absolute;
-        right: 120px;
+        right: 40px;
+    }
+    .navbar{
+        margin-top: 0px;
+        margin: -11px 40px 0px 100px;
+        
     }
 }
 
@@ -385,6 +433,14 @@ details[open] summary::before {
     }
     .idol-page-content{
         margin: 37px 30px;
+    }
+    .navbar{
+        margin-top: 0px;
+        margin: -11px 0px 0px 100px;
+        
+    }
+    .doodle{
+        margin-top: 15px;
     }
     
 }
@@ -402,12 +458,7 @@ details[open] summary::before {
     .main{
         flex-direction:row;
     }
-    .sleeping-boy{
-        margin-left: 30px;
-    }
-    .content{
-        margin: 0 19% 0 2%;
-    }
+    
 
     .hamburger-icon {
         display: none; 
@@ -431,14 +482,10 @@ details[open] summary::before {
         padding: 0; 
         text-align: left;
     }
-    .navbar{
-        margin-top: 0px;
-        margin: -11px 100px 0px 100px;
-        
-    }
+    
     .article-date{
         position: absolute;
-        right: 170px;
+        right: 30px;
     }
 
     .hide-in-desk {
@@ -449,7 +496,7 @@ details[open] summary::before {
         position: fixed;
         flex-direction: column;
         color: var(--secondary-color);
-        margin: 12px 0 0 -21px;
+        margin: 0 0 0 -21px;
     }
     .category-button svg{
         stroke: var(--secondary-color);
@@ -478,6 +525,7 @@ details[open] summary::before {
     .category-button{
         font-size: var(--font-size-medium);
         margin: -5px 0;
+        text-align: left;
     }
     .category-button.active{
         color: var(--primary-color);
