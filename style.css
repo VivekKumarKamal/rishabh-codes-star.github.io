@@ -47,6 +47,9 @@ h2{
     margin-left: 100px;
     margin-right: auto;
 }
+.no-doodle{
+    margin-top: -26px;
+}
 
 
 .main{
@@ -440,7 +443,7 @@ details[open] summary::before {
         
     }
     .doodle{
-        margin-top: 15px;
+        margin-top: 10px;
     }
     
 }
@@ -496,7 +499,7 @@ details[open] summary::before {
         position: fixed;
         flex-direction: column;
         color: var(--secondary-color);
-        margin: 0 0 0 -21px;
+        margin: -12px 0 0 -21px;
     }
     .category-button svg{
         stroke: var(--secondary-color);
